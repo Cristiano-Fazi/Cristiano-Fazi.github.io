@@ -1,0 +1,217 @@
+/* General */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #008170;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0F0F0F, #232D3F);
+}
+
+/* Navigation Bar */
+header {
+    color: #008170;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 5vh;
+    padding-bottom: 1vh;
+}
+
+#navbar {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    padding: 1vw;
+}
+
+nav a {
+    font-weight: bolder;
+    color: #008170;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+}
+
+.navbar-link {
+    color: #008170;
+    text-decoration: none;
+    position: relative; /* Needed for absolute positioning of the line */
+    transition: color 0.3s;
+}
+
+.navbar-link::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%; /* Position in the center */
+    width: 0;
+    height: 3px; /* Height of the line */
+    background-color: #005B41; /* Line color */
+    transition: width 0.3s ease-in-out; /* Smooth transition for line width */
+    transform: translateX(-50%); /* Center horizontally */
+    opacity: 0; /* Initially hidden */
+}
+
+.navbar-link:hover::before {
+    width: 100%; /* Expand the line to cover the text width */
+    opacity: 1; /* Make the line visible */
+}
+
+.navbar-link:hover {
+    color: #005B41;
+}
+
+.navbar-link {
+    color: #008170;
+    text-decoration: none;
+    position: relative; /* Needed for absolute positioning of the line */
+    transition: color 0.3s;
+}
+
+.contact-page-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    border-radius: 2.5vw;
+}
+  
+.contact-page-link:hover {
+    box-shadow: 0 0 20px 5px rgba(0, 91, 65, 0.7);
+    transition: box-shadow 0.3s;
+}
+
+
+/* Footer */
+footer { 
+    color: #008170;
+    text-align: center;
+    padding: 20px;
+    font-size: 2vw;
+}
+
+/* Home Page */
+#main-content {
+    flex: 1;
+    padding: 2vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+}
+
+#left-content {
+    width: 50vw; /* Make it take 50% of the available space */
+    padding: 0 1vw; /* Add spacing from the sides */
+}
+
+#right-content {
+    width: 50vw; /* Make it take 50% of the available space */
+    padding: 0 1vw; /* Add spacing from the sides */
+}
+
+#name-and-title {
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+#about {
+    font-size: 2vw;
+    text-align: justify;
+}
+
+img {
+    max-width: 40vw;
+    justify-content: center;
+    height: auto;
+    display: block;
+}
+
+/* Media Query for screens smaller than a certain width (e.g., phone) */
+@media (max-width: 1200px) {
+    #main-content {
+      flex-direction: column; /* Stack the sections on top of each other */
+    }
+  
+    #left-content, #right-content {
+      width: 80vw; /* Take full width on smaller screens */
+    }
+}
+
+/* Contact Page */
+#contact-information {
+    width: 80vw; /* Adjust the size as needed */
+    height: 40vw; /* Adjust the size as needed */
+    border-radius: 2.5vw; /* Rounded corners */
+    margin: 1.5vw 10vw;
+    background-color: #232D3F;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#contact-card {
+    width: 35vw; /* Adjust the size as needed */
+    height: 15vw; /* Adjust the size as needed */
+    margin: 1vw;
+    text-align: center;
+    border-radius: 2.5vw;
+    background-color: #005B41;
+    flex-direction: row;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid #0F0F0F;
+}
+
+#contact-info {
+    padding: 1vw;
+    width: 10vw; /* Adjust the size as needed */
+    height: 10vw; /* Adjust the size as needed */
+    border-radius: 10%; /* Make the icon block a circle */
+    text-decoration: none;
+    color: black; /* Text color of the icon block */
+    font-size: 4vw; /* Adjust the font size as needed */
+    justify-items: center;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+#contact-info-img {
+    padding-left: 1.5vw;
+    padding-right: 1vw;
+    max-width: 20vw;
+    max-height: 20vh;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
