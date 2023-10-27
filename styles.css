@@ -90,18 +90,6 @@ section {
     transition: color 0.3s;
 }
 
-.contact-page-link {
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-    border-radius: 2.5vw;
-}
-  
-.contact-page-link:hover {
-    box-shadow: 0 0 20px 5px rgba(0, 91, 65, 0.7);
-    transition: box-shadow 0.3s;
-}
-
 
 /* Footer */
 footer { 
@@ -111,29 +99,29 @@ footer {
     font-size: 2vw;
 }
 
+
+
+
 /* Home Page */
 #main-content {
     flex: 1;
-    padding: 2vw;
+    padding: 1vw;
     flex-direction: row;
     display: flex;
     justify-content: space-around;
 }
 
-.project-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: 30%;
-}
-
 #left-content {
+    display: grid;
+    place-items: center;
+    padding: 1vw;
     width: 50vw; /* Make it take 50% of the available space */
     padding: 0 1vw; /* Add spacing from the sides */
 }
 
 #right-content {
+    display: grid;
+    place-items: center;
     width: 50vw; /* Make it take 50% of the available space */
     padding: 0 1vw; /* Add spacing from the sides */
 }
@@ -148,9 +136,8 @@ footer {
     text-align: justify;
 }
 
-img {
+.headshot-image {
     max-width: 40vw;
-    justify-content: center;
     height: auto;
     display: block;
 }
@@ -162,8 +149,27 @@ img {
     }
   
     #left-content, #right-content {
-      width: 80vw; /* Take full width on smaller screens */
+      width: 90vw; /* Take full width on smaller screens */
     }
+
+    #name-and-title {
+        font-size: 6vw;
+    }
+
+    #about {
+        font-size: 4vw;
+    }
+
+    .headshot-image {
+        size: 90vw;
+        min-width: 90vw;
+        justify-self: center;
+    }
+
+    nav li {
+        font-size: 4vw;
+    }
+    
 }
 
 /* Contact Page */
@@ -182,7 +188,6 @@ img {
 #contact-card {
     width: 35vw; /* Adjust the size as needed */
     height: 15vw; /* Adjust the size as needed */
-    margin: 1vw;
     text-align: center;
     border-radius: 2.5vw;
     background-color: #005B41;
@@ -214,4 +219,26 @@ img {
     vertical-align: middle;
     justify-content: center;
     align-items: center;
+}
+
+.contact-page-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    border-radius: 2.5vw;
+    margin: 1vw;
+}
+  
+.contact-page-link:hover {
+    box-shadow: 0 0 20px 10px rgba(0, 91, 65, 0.7);
+    transition: box-shadow 0.3s;
+}
+
+/* Project Page */
+.project-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
 }
