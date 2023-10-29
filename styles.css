@@ -5,30 +5,31 @@ body, h1, h2, p {
 }
 
 body {
-    color: #008170;
-    font-family: 'Times New Roman', Times, serif;
+    color: #0F0F0F;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(to right, #0F0F0F, #232D3F);
+    /*background: linear-gradient(to right, #0F0F0F, #232D3F);*/
+    background: white;
 }
 
 /* Navigation Bar */
 header {
     color: #008170;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); /* Create a grid with 10 equal columns */
     align-items: center;
-    text-align: center;
     min-height: 5vh;
     padding-bottom: 1vh;
 }
 
 #navbar {
+    grid-column: 4 / 7;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .navlist {
@@ -56,11 +57,11 @@ nav a {
 }
 
 section {
-    margin: 20px;
+    margin: 1.5vh;
 }
 
 .navbar-link {
-    color: #008170;
+    color: #3226DB;
     text-decoration: none;
     position: relative; /* Needed for absolute positioning of the line */
     transition: color 0.3s;
@@ -73,7 +74,7 @@ section {
     left: 50%; /* Position in the center */
     width: 0;
     height: 3px; /* Height of the line */
-    background-color: #005B41; /* Line color */
+    background-color: #3E378A; /* Line color */
     transition: width 0.3s ease-in-out; /* Smooth transition for line width */
     transform: translateX(-50%); /* Center horizontally */
     opacity: 0; /* Initially hidden */
@@ -85,25 +86,31 @@ section {
 }
 
 .navbar-link:hover {
-    color: #005B41;
+    color: #3E378A;
 }
 
 .navbar-link {
-    color: #008170;
+    color: #3226DB;
     text-decoration: none;
     position: relative; /* Needed for absolute positioning of the line */
     transition: color 0.3s;
 }
 
+.small-logo {
+    grid-column: 1 / 2;
+    height: 10vh; /* Match the height of the navbar */
+    width: 10vh;
+    padding-left: 1vw;
+    padding-top: 0.5vw;
+}
 
 /* Footer */
 footer { 
-    color: #008170;
+    color: #3226DB;
     text-align: center;
     padding: 20px;
     font-size: 2vw;
 }
-
 
 
 
@@ -135,8 +142,22 @@ footer {
     font-weight: bolder;
 }
 
+.hero-name {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: #1601F0;
+    font-size: 5vw;
+}
+
+.name-and-about-divider-line {
+    height: 0.25vh;
+    width: 45vw;
+    background-color: #0F0F0F;
+    border-color: #0F0F0F;
+}
+
 #about {
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: justify;
 }
 
@@ -148,12 +169,29 @@ footer {
 
 /* Media Query for screens smaller than a certain width (e.g., phone) */
 @media (max-width: 1200px) {
+    #navbar {
+        grid-column: 2 / 7;
+        padding-left: 12.5vw;
+    }
+
+    nav li {
+        font-size: 4vw;
+    }
+
     #main-content {
       flex-direction: column; /* Stack the sections on top of each other */
     }
   
     #left-content, #right-content {
       width: 90vw; /* Take full width on smaller screens */
+    }
+
+    .name-and-about-divider-line{
+        width: 85vw;
+    }
+
+    .hero-name {
+        font-size: 10vw;
     }
 
     #name-and-title {
@@ -164,16 +202,16 @@ footer {
         font-size: 4vw;
     }
 
+    .small-logo {
+        height: 5vh; 
+        width: 5vh;
+    }
+
     .headshot-image {
         size: 90vw;
         min-width: 85vw;
         justify-self: center;
     }
-
-    nav li {
-        font-size: 4vw;
-    }
-    
 }
 
 /* Contact Page */
@@ -182,7 +220,7 @@ footer {
     height: 40vw; /* Adjust the size as needed */
     border-radius: 2.5vw; /* Rounded corners */
     margin: 1.5vw 10vw;
-    background-color: #232D3F;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
