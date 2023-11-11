@@ -100,8 +100,8 @@ section {
     grid-column: 1 / 2;
     height: 10vh; /* Match the height of the navbar */
     width: 10vh;
-    padding-left: 1vw;
-    padding-top: 0.5vw;
+    padding-left: 1.5vw;
+    padding-top: 0.25vw;
 }
 
 /* Footer */
@@ -162,6 +162,7 @@ footer {
 }
 
 .headshot-image {
+    border-radius: 10px;
     max-width: 40vw;
     height: auto;
     display: block;
