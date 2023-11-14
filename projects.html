@@ -18,36 +18,61 @@
         </nav>
     </header>
 
-    <main id="main-content">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Example project card -->
+    <main id="projects-main-content">
+        <h1 class="projects-header">Projects</h1>
+        <section class="projects">
             <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
+                <h3 class="project-card-header">Messaging Application</h3>
+                <div class="technologies-images">
+                    <img src="./images/icons/React-icon.png" alt="React">
+                    <img src="./images/icons/NodeJS-icon.png" alt="Node.js">
+                    <img src="./images/icons/MongoDB-icon.png" alt="MongoDB">
+                </div>
+                <br>
+                <p> 
+                    This web application allows users to create accounts and send messages to fellow users. The site uses cookies, both front and back end, to
+                    maintain user sessions and log them out after a considerable period of inactivity. The front-end of the website is made entirely in react, while
+                    the back-end uses javascript. The database used to store the messages and users was mongoDb. Creating this website greatly increased my understanding
+                    of user to user communication as well as allowing to familiarize myself with the highly popular react framework.
+                </p>
             </div>
 
-            <!-- Example project card -->
             <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
+                <h3 class="project-card-header">FitFolio</h3>
+                <div class="technologies-images">
+                    <img src="./images/icons/kotlin-icon.png" alt="Kotlin">
+                    <img src="./images/icons/jetpackCompose-icon.png" alt="Jetpack Compose">
+                    <img src="./images/icons/firebase-icon.png" alt="Firebase">
+                </div>
+                <br>
+                <p>
+                    Fitfolio is an android application created using kotlin, Jetpack compose and firebase. The purpose of the app is to allow users to plan workouts, keep
+                    track of their workouts and generally make life easier for people going to the gym. Users are required to log in in order to access the applications 
+                    services. Once they've logged in, users can create, delete and update their workout routines as well as follow a routine while exercising. Creating This
+                    app allowed me to learn a lot about android and mobile development in general, an essential skill for an software developer.
+                </p>
             </div>
 
-            <!-- Example project card -->
             <div class="project-card">
-                <img src="project3.jpg" alt="Project 3">
-                <h3>Project 3</h3>
-                <p>Description of Project 3.</p>
+                <h3 class="project-card-header">Vending Machine Application</h3>
+                <div class="technologies-images">
+                    <img src="./images/icons/Csharp-icon.png" alt="C#">
+                    <img src="./images/icons/wpf-icon.png" alt="WPF">
+                    <img src="./images/icons/SQL-icon.png" alt="SQL">
+                </div>
+                <br>
+                <p> 
+                    This desktop application simulates a vending machine virtually. The application allows users to buy items from the vending machine either by cash or 
+                    by card, not using real tender of course. The application will remember  how much of each item has been bought using it's database. While the application 
+                    is not practical whatsoever, it allowed me to greatly develop my understanding of front-end user experience development. I am happy with the visuals and
+                    believe that this application is displays some of my best work, with regards to user experience and presentation.
+                </p>
             </div>
+
+
 
             <!-- Add more project cards as needed -->
         </section>
+    </main>
 </body>
 </html>

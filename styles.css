@@ -98,11 +98,13 @@ section {
 
 .small-logo {
     grid-column: 1 / 2;
-    height: 10vh; /* Match the height of the navbar */
+    height: 10vh;
     width: 10vh;
     padding-left: 1.5vw;
     padding-top: 0.25vw;
 }
+
+
 
 /* Footer */
 footer { 
@@ -278,10 +280,56 @@ footer {
 }
 
 /* Project Page */
+.projects-main-content{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.project-card-header{
+    margin-top: 0.25vh;
+    margin-bottom: 2.5vh;
+    justify-content: left;
+}
+
 .project-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
-    width: 30%;
+    border: 1px solid #3226DB;
+    border-radius: 5px;
+    padding: 1vw;
+    margin: 1vw;
+    width: 90%;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+#projects-main-content .projects-header {
+    text-align: center;
+}
+
+#projects-header{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.technologies-images {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.technologies-images img {
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    max-width: 5vw;
+    min-width: 50px;
+    margin: 0 5px; /* Adjust the spacing between images */
 }
