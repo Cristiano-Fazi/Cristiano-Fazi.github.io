@@ -133,6 +133,7 @@ footer {
     padding: 1vw;
     width: 50vw; /* Make it take 50% of the available space */
     padding: 0 1vw; /* Add spacing from the sides */
+    animation: fadeInUp 1s ease-in-out forwards; /* To fade in when the page loads */
 }
 
 #right-content {
@@ -140,11 +141,22 @@ footer {
     place-items: center;
     width: 50vw; /* Make it take 50% of the available space */
     padding: 0 1vw; /* Add spacing from the sides */
+    animation: fadeInUp 1s ease-in-out forwards; /* To fade in when the page loads */
 }
 
 #name-and-title {
     font-size: 3vw;
     font-weight: bolder;
+
+    /* For fading in from below on page load */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#name-and-title.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hero-name {
@@ -159,11 +171,31 @@ footer {
     width: 45vw;
     background-color: #0F0F0F;
     border-color: #0F0F0F;
+
+    /* For fading in from below on page load */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.name-and-about-divider-line.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #about {
     font-size: 1.5vw;
     text-align: justify;
+
+    /* For fading in from below on page load */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#about.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .headshot-image {
@@ -171,6 +203,28 @@ footer {
     max-width: 40vw;
     height: auto;
     display: block;
+
+    /* For fading in from below on page load */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.headshot-image.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media Query for screens smaller than a certain width (e.g., phone) */
@@ -219,6 +273,8 @@ footer {
         justify-self: center;
     }
 }
+
+
 
 /* Contact Page */
 #contact-information {
@@ -281,6 +337,8 @@ footer {
     box-shadow: 0 0 20px 10px rgba(0, 91, 65, 0.7);
     transition: box-shadow 0.3s;
 }
+
+
 
 /* Project Page */
 .projects-main-content{
