@@ -277,68 +277,122 @@ footer {
 
 
 /* Contact Page */
-#contact-information {
-    width: 80vw; /* Adjust the size as needed */
-    height: 40vw; /* Adjust the size as needed */
-    border-radius: 2.5vw; /* Rounded corners */
-    margin: 1.5vw 10vw;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+.contact-body{
+    min-height: 100vh;
 }
 
-#contact-card {
-    width: 35vw; /* Adjust the size as needed */
-    height: 15vw; /* Adjust the size as needed */
+#contact-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20vh 0;
+
+    margin: 0;
+    padding: 5vw;
+    color: #0F0F0F;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#contact-main-content {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-title {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+
+.contact-paragraph{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+.contact-email {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+.contact-paragraph {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.contact-email a {
+    font-weight: bolder;
+    text-decoration: none;
+    margin-right: 20px;
+    color: #0F0F0F;
+    background: linear-gradient(90deg, #0F0F0F 0%, #0F0F0F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-email a:hover {
+    color: #3226DB; /* Change to the desired hover color */
+}
+
+
+
+#contact-email-section{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-icons-container {
+    display: flex;
+}
+
+#custom-footer {
     text-align: center;
-    border-radius: 2.5vw;
-    background-color: #005B41;
-    flex-direction: row;
-    align-content: center;
-    display: flex;
-    align-items: center;
-    border: 1px solid #0F0F0F;
+    position: fixed;
+    bottom: 0;
+    padding: 0 10%;
+    width: 80%;
 }
 
-#contact-info {
-    padding: 1vw;
-    width: 10vw; /* Adjust the size as needed */
-    height: 10vw; /* Adjust the size as needed */
-    border-radius: 10%; /* Make the icon block a circle */
-    text-decoration: none;
-    color: black; /* Text color of the icon block */
-    font-size: 4vw; /* Adjust the font size as needed */
-    justify-items: center;
+#custom-footer .footer-icons {
     display: flex;
-    align-items: center; /* Vertically center the text */
-}
-
-#contact-info-img {
-    padding-left: 1.5vw;
-    padding-right: 1vw;
-    max-width: 20vw;
-    max-height: 20vh;
-    vertical-align: middle;
     justify-content: center;
-    align-items: center;
 }
 
-.contact-page-link {
+#custom-footer .footer-icons a {
     text-decoration: none;
-    display: inline-block;
-    transition: all 0.2s ease-in-out;
-    border-radius: 2.5vw;
-    margin: 1vw;
-}
-  
-.contact-page-link:hover {
-    box-shadow: 0 0 20px 10px rgba(0, 91, 65, 0.7);
-    transition: box-shadow 0.3s;
+    margin: 3vw 3vw; /* Adjust margin as needed */
 }
 
-
+#custom-footer .footer-icons img {
+    width: 50px; /* Adjust icon size as needed */
+    height: 50px;
+}
 
 /* Project Page */
 .projects-main-content{

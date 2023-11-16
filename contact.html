@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contact</title>
 </head>
-<body>
+<body class="contact-body">
     <header>
         <img class="small-logo" src="./images/Cristiano-Fazi-logo.png" alt="small-logo">
         <nav id="navbar">
@@ -18,47 +18,30 @@
         </nav>
     </header>
 
-    <main id="contact-information">
-        <a class="contact-page-link" href="https://linkedin.com/in/cristiano-fazi-b21584208/" target="_blank">
-            <div id="contact-card">
-                <img src="./images/linkedin-icon.png" id="contact-info-img" alt="Linkedin Icon">
-                <div id="contact-info">
-                    LinkedIn
-                </div>
-            </div>
-        </a>
-
-        <a class="contact-page-link" href="https://www.facebook.com/cristiano.fazi.75" target="_blank">
-            <div id="contact-card">
-                <img src="./images/Facebook-logo.png" id="contact-info-img"  alt="Facebook Icon">
-                <div id="contact-info">
-                    Facebook
-                </div>
-            </div>
-        </a>
-
-        <a class="contact-page-link" href="https://github.com/Cristiano-Fazi" target="_blank">
-            <div id="contact-card">
-                <img src="./images/Github-logo.png" id="contact-info-img" alt="Github Icon">
-                <div id="contact-info">
-                    Github
-                </div>
-            </div>
-        </a>
-
-        <a class="contact-page-link">
-            <div id="contact-card">
-                <img src="./images/email-icon.png" id="contact-info-img"  alt="Email Icon">
-                <div id="contact-info">
-                    Email
-                </div>
-            </div>
-        </a>
+    <main id="contact-main-content">
+        <section id="contact-header" class="fade-in">
+            <h1 class="contact-title">Let's Talk</h1>
+        </section>
+        <br>
+        <section id="contact-info" class="fade-in">
+            <p class="contact-paragraph">
+                I would love to hear from you! Whether you have a project in mind or just want to say hello, feel free to get in touch!
+            </p>
+        </section>
+        <br>
+        <section id="contact-email-section" class="fade-in">
+            <p class="contact-email">
+                <a href="mailto:cristiano.fazi@bell.net">cristiano.fazi@bell.net</a>
+            </p>
+        </section>
     </main>
-
-    <!-- Footer contains CV download link -->
-    <footer>
-        <a href="./files/CV.pdf" class="navbar-link" download>Download CV</a>
+    
+    <footer id="custom-footer">
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/cristiano-fazi-b21584208/" target="_blank"><img src="./images/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/Cristiano-Fazi" target="_blank"><img src="./images/Github-logo.png" alt="GitHub"></a>
+            <a href="https://www.facebook.com/cristiano.fazi.75" target="_blank"><img src="./images/Facebook-logo.png" alt="Facebook"></a>
+        </div>
     </footer>
 </body>
 </html>
