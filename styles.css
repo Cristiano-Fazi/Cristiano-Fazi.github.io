@@ -317,7 +317,10 @@ footer {
     text-align: center;
 }
 
-#projects-header{
+.projects-header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#3E378A;
+    font-size: 5vw;
     text-align: center;
     margin: 0 auto; 
 }
@@ -336,8 +339,6 @@ footer {
     min-width: 50px;
     margin: 0 5px; /* Adjust the spacing between images */
 }
-
-
 
 .github-btn {
     display: inline-block;
