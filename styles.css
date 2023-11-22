@@ -121,6 +121,7 @@ footer {
 
 /* Home Page */
 #main-content {
+    margin-bottom: 10vh;
     flex: 1;
     flex-direction: row;
     display: flex;
@@ -166,6 +167,7 @@ footer {
     font-size: 5vw;
 }
 
+/* Line that divides name and title from short description */
 .name-and-about-divider-line {
     height: 0.25vh;
     width: 45vw;
@@ -250,6 +252,10 @@ footer {
         width: 85vw;
     }
 
+    .home-page-section-divider-line {
+        width: 90vw
+    }
+
     .hero-name {
         font-size: 10vw;
     }
@@ -308,6 +314,10 @@ footer {
 }
 
 #contact-main-content {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+#about-page {
     animation: fadeInUp 1s ease-in-out forwards;
 }
 
