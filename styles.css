@@ -489,7 +489,6 @@ footer {
     color:#3E378A;
     font-size: 5vw;
     text-align: center;
-    margin: 0 auto; 
 }
 
 .technologies-images {
@@ -546,6 +545,10 @@ footer {
     .project-card-header{
         margin-top: 7.5px;
         margin-left: 7.5px;
+    }
+
+    .technologies-images img {
+        padding: 5px;
     }
 
     .project-card-text {
