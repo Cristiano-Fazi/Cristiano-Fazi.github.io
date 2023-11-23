@@ -20,25 +20,26 @@ body {
 
 /* Navigation Bar */
 header {
-    color: #008170;
+    color: #3E378A;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr); /* Create a grid with 10 equal columns */
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    text-align: center;
     min-height: 5vh;
     padding-bottom: 1vh;
 }
 
 #navbar {
-    grid-column: 4 / 7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    width: 100%; /* Add this line to ensure the navbar takes full width */
 }
 
 .navlist {
     list-style: none; /* Remove the default list styles */
     padding: 0;
+    
     display: flex;
 }
 
@@ -56,7 +57,7 @@ nav li {
 
 nav a {
     font-weight: bolder;
-    color: #008170;
+    color: #3E378A;
     text-decoration: none;
 }
 
@@ -65,7 +66,7 @@ section {
 }
 
 .navbar-link {
-    color: #3226DB;
+    color: #3E378A;
     text-decoration: none;
     position: relative; /* Needed for absolute positioning of the line */
     transition: color 0.3s;
@@ -94,7 +95,7 @@ section {
 }
 
 .navbar-link {
-    color: #3226DB;
+    color: #3E378A;
     text-decoration: none;
     position: relative; /* Needed for absolute positioning of the line */
     transition: color 0.3s;
@@ -164,7 +165,7 @@ footer {
 .hero-name {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
-    color: #1601F0;
+    color: #3E378A;
     font-size: 5vw;
 }
 
@@ -235,11 +236,6 @@ footer {
 
 /* Media Query for screens smaller than a certain width (e.g., phone) */
 @media (max-width: 1200px) {
-    #navbar {
-        grid-column: 2 / 7;
-        padding-left: 12.5vw;
-    }
-
     nav li {
         font-size: 4vw;
     }
@@ -548,7 +544,7 @@ footer {
     }
 
     .technologies-images img {
-        padding: 5px;
+        padding: 12.5px;
     }
 
     .project-card-text {
