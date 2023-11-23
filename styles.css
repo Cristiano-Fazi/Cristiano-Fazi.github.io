@@ -218,6 +218,9 @@ footer {
     transform: translateY(0);
 }
 
+.about-footer {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
 
 @keyframes fadeInUp {
     0% {
@@ -385,7 +388,6 @@ footer {
 }
 
 
-
 #contact-email-section{
     display: flex;
     align-items: center;
@@ -396,33 +398,56 @@ footer {
     display: flex;
 }
 
-#custom-footer {
+#contact-footer {
     text-align: center;
     position: fixed;
     bottom: 0;
     padding: 0 10%;
     width: 80%;
+    animation: fadeInUp 1s ease-in-out forwards;
 }
 
-#custom-footer .footer-icons {
+#contact-footer .footer-icons {
     display: flex;
     justify-content: center;
 }
 
-#custom-footer .footer-icons a {
+#contact-footer .footer-icons a {
     text-decoration: none;
     margin: 3vw 3vw; /* Adjust margin as needed */
     transition: transform 0.3s ease-in-out; /* Add a 0.5-second transition for smooth scaling */
 }
 
-#custom-footer .footer-icons img {
+#contact-footer .footer-icons img {
     width: 50px; /* Adjust icon size as needed */
     height: 50px;
 }
 
-#custom-footer .footer-icons a:hover {
+#contact-footer .footer-icons a:hover {
     transform: scale(1.25); /* Increase the size by 50% on hover */
 }
+
+/* Media Query for screens smaller than a certain width (e.g., phone) */
+@media (max-width: 1200px) {
+    .contact-title{
+        font-size: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-paragraph{
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contact-email {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+}
+
 
 /* Project Page */
 .projects-main-content{
@@ -482,6 +507,10 @@ footer {
     margin: 0 5px; /* Adjust the spacing between images */
 }
 
+.project-card-text {
+    /* Nothing for now */
+}
+
 .github-btn {
     display: inline-block;
     text-decoration: none;
@@ -511,5 +540,22 @@ footer {
 
 .github-btn:hover i {
     color: white; /* Change arrow color on hover */
+}
+
+@media (max-width: 1200px) {
+    .project-card-header{
+        margin-top: 7.5px;
+        margin-left: 7.5px;
+    }
+
+    .project-card-text {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+
+    .github-btn {
+        margin-left: 5px;
+        margin-bottom: 7.5px;
+    }
 }
 
