@@ -64,7 +64,7 @@ export default class Player extends GameEntity {
 
 		//Inventory stuff
 		this.money = money;
-		this.inventory = this.loadInventory() ?? [{item: new WheatSeed(), quantity: 1}, {item: new CornSeed(), quantity: 1}, {item: new WatermelonSeed(), quantity: 1}, {item: new StrawberrySeed(), quantity: 1}, {item: new TomatoSeed(), quantity: 1}, {item: new PumpkinSeed(), quantity: 1}, {item: new RaddishSeed(), quantity: 1}, null, null];
+		this.inventory = this.loadInventory() ?? [{item: new WheatSeed(), quantity: 10}, null, null, null, null, null, null, null, null];
 		this.selectedInventoryItem = 0;
 		this.barnInventory = this.loadBarnInventory() ?? [];
 
