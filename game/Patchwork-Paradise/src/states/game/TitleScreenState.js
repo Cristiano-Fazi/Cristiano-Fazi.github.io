@@ -70,7 +70,7 @@ export default class TitleScreenState extends State {
 	initializeGame() {
 		const money = Number(JSON.parse(localStorage.getItem("money")) ?? 500);
 		//const player = new Player({ position: TownMap.PLAYER_SPAWN_POSITION}, new Outfit(Clothes.Basic,  ClothesColor.Red, Clothes.Pants, ClothesColor.Black, Clothes.Shoes, ClothesColor.Black, Hair.Gentleman, HairColor.Brown));
-		const player = new Player({ position: {x: TownMap.PLAYER_SPAWN_POSITION.x, y: TownMap.PLAYER_SPAWN_POSITION.y } }, new Outfit(Clothes.Basic,  ClothesColor.Red, Clothes.Pants, ClothesColor.Black, Clothes.Shoes, ClothesColor.Black, Hair.Gentleman, HairColor.Brown), money);
+		const player = new Player({ position: {x: FarmMap.PLAYER_SPAWN_POSITION.x, y: TownMap.PLAYER_SPAWN_POSITION.y } }, new Outfit(Clothes.Basic,  ClothesColor.Red, Clothes.Pants, ClothesColor.Black, Clothes.Shoes, ClothesColor.Black, Hair.Gentleman, HairColor.Brown), money);
 		this.loadObjectStore();
 		const maps = {
 			SmallFarm: new FarmMap(MAP_DEFINITIONS.SmallFarm, player, objectStore),
@@ -88,18 +88,18 @@ export default class TitleScreenState extends State {
 			TitleTown: new TownMap(MAP_DEFINITIONS.Town, player)
 		}
 
-		let playerSpawningMap = maps.Town
+		let playerSpawningMap; //= maps.TownMap
 		switch(player.currentFarmLevel) {
 			case 1:
-				//playerSpawningMap = maps.SmallFarm;
+				playerSpawningMap = maps.SmallFarm;
 				maps.Town.changeFarm(Maps.SmallFarm);
 				break;
 			case 2:
-				//playerSpawningMap = maps.MediumFarm;
+				playerSpawningMap = maps.MediumFarm;
 				maps.Town.changeFarm(Maps.MediumFarm);
 				break;
 			case 3:
-				//playerSpawningMap = maps.BigFarm;
+				playerSpawningMap = maps.BigFarm;
 				maps.Town.changeFarm(Maps.BigFarm);
 				break;
 		}
@@ -138,7 +138,7 @@ export default class TitleScreenState extends State {
 				obj.offset.y = object.offsetY
 				return obj
 			})
-			objectStore.objects = savedObjects
 		}
+		objectStore.objects = savedObjects ?? []
 	}
 }

@@ -18,7 +18,7 @@ import Barn from "../../objects/farmObjects/Barn.js"
 
 export default class FarmMap extends Map {
     static SIZE = 30;
-    static PLAYER_SPAWN_POSITION = new Vector(28, 8);
+    static PLAYER_SPAWN_POSITION = new Vector(26, 6);
     static WIN_SPAWN_POSITION = new Vector(28, -12);
     static TOWN_PATH = new Path(new Vector(1, 3), new Vector(30, 8), Maps.Town);
     static MUSIC = SoundName.Empty_Mind;

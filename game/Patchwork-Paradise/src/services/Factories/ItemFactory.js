@@ -28,6 +28,10 @@ import Emerald from "../../objects/items/Emerald.js";
 import Diamond from "../../objects/items/Diamond.js";
 import Ruby from "../../objects/items/Ruby.js";
 import Apple from "../../objects/items/Apple.js";
+import Rock from "../../objects/items/Rock.js";
+import Feather from "../../objects/items/Feather.js";
+import Wood from "../../objects/items/Wood.js";
+import Clover from "../../objects/items/Clover.js";
 
 export default class ItemFactory {
     static CreateInstance(itemType) {
@@ -90,6 +94,14 @@ export default class ItemFactory {
                 return new Ruby();
 			case ItemType.Apple:
 				return new Apple();
+			case ItemType.Rock:
+				return new Rock();
+			case ItemType.Feather:
+				return new Feather();
+			case ItemType.Wood:
+				return new Wood();
+			case ItemType.Clover:
+				return new Clover();
 			default:
 				console.log("Invalid item type provided");
 				return "Error"

@@ -18,6 +18,15 @@ import TomatoSeed from '../../objects/seeds/TomatoSeed.js';
 import WatermelonSeed from '../../objects/seeds/WatermelonSeed.js';
 import WheatSeed from '../../objects/seeds/WheatSeed.js';
 import StarFlowerSeed from '../../objects/seeds/StarFlowerSeeds.js';
+import Diamond from '../../objects/items/Diamond.js';
+import Emerald from '../../objects/items/Emerald.js';
+import Ruby from '../../objects/items/Ruby.js';
+import SeaShell from '../../objects/items/SeaShell.js';
+import Apple from '../../objects/items/Apple.js';
+import Rock from '../../objects/items/Rock.js'
+import Feather from '../../objects/items/Feather.js';
+import Wood from '../../objects/items/Wood.js';
+import Clover from '../../objects/items/Clover.js';
 
 export default class Vik extends NPC {
 	static BASE_FARM_COST = 100;
@@ -53,26 +62,22 @@ export default class Vik extends NPC {
 			new TomatoSeed(),      
 			new WatermelonSeed(), 
 			new WheatSeed(), 
-			null, 
-			null, 
-			null, 
 			new StarFlowerSeed(), 
+			null, 
+			null, 
+			null, 
 			null,
 			null, 
 			null, 
-			null, 
-			null, 
-			null, 
-			//TRINKETS      
-			null, 
-			null, 
-			null, 
-			null, 
-			null, 
-			null, 
-			null, 
-			null, 
-			null
+			new Diamond(), 
+			new Emerald(), 
+			new Ruby(), 
+			new SeaShell(), 
+			new Apple(), 
+			new Rock(), 
+			new Feather(),  
+			new Wood(), 
+			new Clover(), 
 		];
 	}
 

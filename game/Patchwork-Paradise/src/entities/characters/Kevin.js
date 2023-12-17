@@ -23,34 +23,26 @@ export default class Kevin extends NPC {
 	}
 
 	createDialogueTree(){
-		this.start = new DialogueNode('Hello my name is Kevin!', Panel.DIALOGUE, null);
+		this.start = new DialogueNode('Gee... the brain rot has gotten to me!', Panel.DIALOGUE, null);
 
 		let node = this.start;
-		node.next = new DialogueNode('You look new. Can I help you learn a little bit about the game?', Panel.DIALOGUE, null);
-
+		node.next = new DialogueNode('Doing game programming at 2:40 am really did a number on me.', Panel.DIALOGUE, null);
 		node = node.next;
-		let choice1option1 = new DialogueNode('To move around press the W, A, S and D keys!', Panel.DIALOGUE, null);
-		let choice1option2 = new DialogueNode('Goodbye!', Panel.DIALOGUE, 'end');
+
+		node.next = new DialogueNode('Do you like farming tycoon type games?', Panel.DIALOGUE, null);
+		node = node.next;
+
+		let choice1option1 = new DialogueNode('Nice me too! You should give Patchword Paradise a try!', Panel.DIALOGUE, null);
+		let choice1option2 = new DialogueNode('Thats to bad, I\'m sorry to hear that.', Panel.DIALOGUE, null);
 		node.next = new DialogueChoiceNode(Panel.DIALOGUE, [
 			{ text: 'Yes', onSelect: () => { this.dialogue = choice1option1; stateStack.pop() }},
 			{ text: 'No', onSelect: () => { this.dialogue = choice1option2; stateStack.pop()}},
 		])
-		choice1option1.next = new DialogueNode('Press the E key to interact with people and objects!', Panel.DIALOGUE, null);
-
-		node = choice1option1.next;
-		node.next = new DialogueNode('Do you know where to buy seeds?', Panel.DIALOGUE, null);
-
+		node = choice1option1;
+		node.next = new DialogueNode('I should really get back to it. Nice talking to you!', Panel.DIALOGUE, 'end');
 		node = node.next;
-		let choice2option1 = new DialogueNode('I guess you didnt need my help after all!', Panel.DIALOGUE, null)
-		let choice2option2 = new DialogueNode('Its on your left!', Panel.DIALOGUE, null);
-		node.next = new DialogueChoiceNode(Panel.DIALOGUE, [
-			{ text: 'At the market to your left!', onSelect: () => { this.dialogue = choice2option1; stateStack.pop()} },
-			{ text: 'I have no idea...', onSelect: () => { this.dialogue = choice2option2; stateStack.pop()}},
-		]);
-
-		choice2option1.next = new DialogueNode('Goodbye!', Panel.DIALOGUE, 'end');
-		choice2option2.next = new DialogueNode('Goodbye!', Panel.DIALOGUE, 'end');
-
+		node = choice1option2;
+		node.next = new DialogueNode('I should really get back to it.', Panel.DIALOGUE, 'end');
 		return this.start;
 	}
 }

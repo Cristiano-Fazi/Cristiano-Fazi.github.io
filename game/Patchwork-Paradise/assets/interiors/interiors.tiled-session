@@ -48,6 +48,22 @@
                 "y": 353
             }
         },
+        "C:/Users/kevin/Desktop/game/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/bigfarm.tmx": {
+            "scale": 1.5635416666666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 240.47968021319122,
+                "y": 157.9746835443038
+            }
+        },
+        "C:/Users/kevin/Desktop/game/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/mediumfarm.tmx": {
+            "scale": 2,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 232.5,
+                "y": 160
+            }
+        },
         "FarmStuff.tsx": {
             "dynamicWrapping": false,
             "scaleInDock": 1.5,
@@ -57,8 +73,8 @@
             "scale": 2,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 218.5,
-                "y": 250
+                "x": 218,
+                "y": 249.5
             }
         },
         "Nipreet-Jordan-House.tmx": {
@@ -90,8 +106,8 @@
             "scale": 1,
             "selectedLayer": 4,
             "viewCenter": {
-                "x": 303,
-                "y": 263
+                "x": 302,
+                "y": 262
             }
         },
         "Shop.tmx": {
@@ -101,8 +117,8 @@
             "scale": 1.5,
             "selectedLayer": 3,
             "viewCenter": {
-                "x": 255.99999999999997,
-                "y": 83.66666666666664
+                "x": 254.66666666666666,
+                "y": 82.66666666666669
             }
         },
         "Vik-House.tmx": {
@@ -123,8 +139,8 @@
             "scale": 1.5,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 255.99999999999997,
-                "y": 83
+                "x": 183.66666666666663,
+                "y": 89.66666666666666
             }
         },
         "bathroom furniture.tsx": {
@@ -150,6 +166,8 @@
             "scaleInEditor": 1
         }
     },
+    "last.exportedFilePath": "C:/Users/kevin/Desktop/game/project-kevin-and-cristiano-s-team/Patchwork-Paradise/config",
+    "map.lastUsedExportFilter": "All Files (*)",
     "openFiles": [
         "globals.tsx",
         "Riddhi-and-Yano-House.tmx",
@@ -160,8 +178,8 @@
     ],
     "project": "interiors.tiled-project",
     "recentFiles": [
-        "globals.tsx",
         "Riddhi-and-Yano-House.tmx",
+        "globals.tsx",
         "Shop.tmx",
         "Vincent-House.tmx",
         "Kevin-Sophia.tmx",

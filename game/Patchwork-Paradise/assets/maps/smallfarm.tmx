@@ -4,7 +4,7 @@
   <export target="../../config/smallfarm.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" source="global.tsx"/>
- <layer id="1" name="Bottom Layer" width="30" height="30" locked="1">
+ <layer id="1" name="Bottom Layer" width="30" height="30">
   <data encoding="csv">
 1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,
 1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,1038,

@@ -31,10 +31,10 @@ export default class Sophia extends NPC {
 	}
 
 	createDialogueTree(){
-		this.start = new DialogueNode('Hey, I\'m Sophia, this is my house', Panel.DIALOGUE, null);
+		this.start = new DialogueNode('Just finished studying, I need a vacation...', Panel.DIALOGUE, null);
 
 		let node = this.start;
-
+		node.next = new DialogueNode('Bing Bong Bye', Panel.DIALOGUE, 'end');
 		return this.start;
 	}
 }

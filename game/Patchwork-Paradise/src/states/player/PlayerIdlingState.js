@@ -78,7 +78,6 @@ export default class PlayerIdlingState extends State {
 			if(map.farmingEnabled) {
 				let tile = map.bottomLayer.getTile(this.player.position.x, this.player.position.y);
 				let inventoryItem = this.player.inventory[this.player.selectedInventoryItem];
-
 				if(this.player.canHarvest) {
 					if(!this.player.isInventoryFull()) {
 						this.player.changeState(PlayerStateName.Harvesting);

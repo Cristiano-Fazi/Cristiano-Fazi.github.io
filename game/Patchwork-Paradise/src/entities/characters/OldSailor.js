@@ -88,7 +88,7 @@ export default class OldSailor extends NPC {
         let sailorWisdom = [
 			new DialogueNode('One thing the sea has taught me is that patience be the anchor that steadies a sailor in the stormiest of waters.', Panel.DIALOGUE, choice1),
 			new DialogueNode('In the vast ocean of life, always be ready to adjust yer sails, for the winds of change are as unpredictable as the tide.', Panel.DIALOGUE, choice1),
-			new DialogueNode('Say? a smooth sea never made a skilled sailor. Embrace the challenges, for they be the forge that shapes a true mariner.', Panel.DIALOGUE, choice1),
+			new DialogueNode('Say? a smooth sea never made a skilled sailor. Embrace the challenges, for they be the forge that shapes a mariner.', Panel.DIALOGUE, choice1),
 			new DialogueNode('Ships find safety in the harbor, but that ain\'t their purpose. Embrace the open sea; that\'s where they thrive, as do you.', Panel.DIALOGUE, choice1),
 			new DialogueNode('Here be a nugget of wisdom from the briny deep: Respect the sea, and it shall share its secrets with ye.', Panel.DIALOGUE, choice1),
 		]

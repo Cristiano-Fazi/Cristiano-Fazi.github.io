@@ -28,6 +28,10 @@ const ItemType = {
     Emerald: "Emerald",
     Ruby: "Ruby",
     Apple: "Apple",
+    Rock: "Rock",
+    Feather: "Feather",
+    Wood: "Wood",
+    Clover: "Clover",
 }
 
 export default ItemType
