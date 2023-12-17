@@ -1,0 +1,110 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "town.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "C:/Users/Cristiano/Desktop/Game Programming/Assignemnts/Assignment 6/6-pokemon-Cristiano-Fazi/assets/maps/Tileset.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Assignemnts/Assignment 6/6-pokemon-Cristiano-Fazi/assets/maps/pokemon.tmx": {
+            "scale": 1.708020833333333,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 240.3366469476124,
+                "y": 176.2273586631701
+            }
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Assignemnts/Assignment 6/6-pokemon-Cristiano-Fazi/assets/maps/town.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 278.25,
+                "y": 197
+            }
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/config/map.json": {
+            "scale": 0.75,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 592,
+                "y": 608
+            }
+        },
+        "bigfarm.tmx": {
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 339.5,
+                "y": 164.5
+            }
+        },
+        "farm.tmx": {
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 574.6666666666666,
+                "y": 376.3333333333333
+            }
+        },
+        "global.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "mediumfarm.tmx": {
+            "scale": 1.2567708333333334,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 239.50269374222955,
+                "y": 199.71819312059677
+            }
+        },
+        "smallfarm.tmx": {
+            "scale": 0.75,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 334.6666666666667,
+                "y": 273.3333333333333
+            }
+        },
+        "town.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 324,
+                "y": 616
+            }
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/config",
+    "last.imagePath": "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/sprites",
+    "map.height": 60,
+    "map.lastUsedExportFilter": "All Files (*)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 16,
+    "map.tileWidth": 16,
+    "map.width": 60,
+    "openFiles": [
+        "global.tsx",
+        "town.tmx"
+    ],
+    "project": "farm-alpha.tiled-project",
+    "recentFiles": [
+        "global.tsx",
+        "town.tmx",
+        "farm.tmx",
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/config/map.json",
+        "C:/Users/Cristiano/Desktop/Game Programming/Assignemnts/Assignment 6/6-pokemon-Cristiano-Fazi/assets/maps/town.tmx",
+        "C:/Users/Cristiano/Desktop/Game Programming/Assignemnts/Assignment 6/6-pokemon-Cristiano-Fazi/assets/maps/pokemon.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 16,
+        "width": 16
+    }
+}

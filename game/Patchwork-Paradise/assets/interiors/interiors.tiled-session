@@ -1,0 +1,176 @@
+{
+    "activeFile": "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/town.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "Breanna-Cindy-House.tmx": {
+            "scale": 1,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 162,
+                "y": 257
+            }
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/Shop.tmx": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 92.75,
+                "y": 204.5
+            }
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/farm.tmx": {
+            "scale": 2.278020833333333,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 194.02807627234898,
+                "y": -197.97887420549637
+            }
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/global.tsx": {
+            "scaleInDock": 1
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/town.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 312,
+                "y": 218
+            }
+        },
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/untitled.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 110.5,
+                "y": 353
+            }
+        },
+        "FarmStuff.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Kevin-Sophia.tmx": {
+            "scale": 2,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 218.5,
+                "y": 250
+            }
+        },
+        "Nipreet-Jordan-House.tmx": {
+            "expandedObjectLayers": [
+                2
+            ],
+            "scale": 1,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 219.5,
+                "y": 349
+            }
+        },
+        "Noah-Carson-House.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 184.33333333333331,
+                "y": 258
+            }
+        },
+        "Riddhi-and-Yano-House.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 1,
+            "selectedLayer": 4,
+            "viewCenter": {
+                "x": 303,
+                "y": 263
+            }
+        },
+        "Shop.tmx": {
+            "expandedObjectLayers": [
+                10
+            ],
+            "scale": 1.5,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 255.99999999999997,
+                "y": 83.66666666666664
+            }
+        },
+        "Vik-House.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 2,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 155.25,
+                "y": 254
+            }
+        },
+        "Vincent-House.tmx": {
+            "expandedObjectLayers": [
+                4
+            ],
+            "scale": 1.5,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 255.99999999999997,
+                "y": 83
+            }
+        },
+        "bathroom furniture.tsx": {
+            "scaleInDock": 0.33,
+            "scaleInEditor": 2
+        },
+        "globals.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
+        },
+        "untitled.tmx": {
+            "scale": 2,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": -32.25,
+                "y": -113
+            }
+        },
+        "wallpapers.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        }
+    },
+    "openFiles": [
+        "globals.tsx",
+        "Riddhi-and-Yano-House.tmx",
+        "Shop.tmx",
+        "Vincent-House.tmx",
+        "Kevin-Sophia.tmx",
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/town.tmx"
+    ],
+    "project": "interiors.tiled-project",
+    "recentFiles": [
+        "globals.tsx",
+        "Riddhi-and-Yano-House.tmx",
+        "Shop.tmx",
+        "Vincent-House.tmx",
+        "Kevin-Sophia.tmx",
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/town.tmx",
+        "Vik-House.tmx",
+        "Noah-Carson-House.tmx",
+        "Breanna-Cindy-House.tmx",
+        "FarmStuff.tsx",
+        "wallpapers.tsx",
+        "C:/Users/Cristiano/Desktop/Game Programming/Final Project/project-kevin-and-cristiano-s-team/Patchwork-Paradise/assets/maps/Shop.tmx"
+    ]
+}

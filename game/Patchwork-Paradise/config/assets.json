@@ -1,0 +1,405 @@
+{
+	"images": [
+		{
+			"name": "tiles",
+			"path": "./assets/images/tiles.png",
+			"width": 2368,
+			"height": 1136
+		},
+		{
+			"name": "interiorTiles",
+			"path": "./assets/images/interiorTiles.png",
+			"width": 4320,
+			"height": 3440
+		},
+		{
+			"name": "char1",
+			"path": "./assets/images/char1.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "char2",
+			"path": "./assets/images/char2.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "char3",
+			"path": "./assets/images/char3.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "char4",
+			"path": "./assets/images/char4.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "char5",
+			"path": "./assets/images/char5.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "char6",
+			"path": "./assets/images/char6.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "char7",
+			"path": "./assets/images/char7.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "basic",
+			"path": "./assets/images/clothes/basic.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "clown",
+			"path": "./assets/images/clothes/clown.png",
+			"width": 512,
+			"height": 1568
+		},
+		{
+			"name": "dress",
+			"path": "./assets/images/clothes/dress.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "floral",
+			"path": "./assets/images/clothes/floral.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "overalls",
+			"path": "./assets/images/clothes/overalls.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "pants_suit",
+			"path": "./assets/images/clothes/pants_suit.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "pants",
+			"path": "./assets/images/clothes/pants.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "pumpkin",
+			"path": "./assets/images/clothes/pumpkin.png",
+			"width": 512,
+			"height": 1568
+		},
+		{
+			"name": "sailor_bow",
+			"path": "./assets/images/clothes/sailor_bow.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "sailor",
+			"path": "./assets/images/clothes/sailor.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "shoes",
+			"path": "./assets/images/clothes/shoes.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "skirt",
+			"path": "./assets/images/clothes/skirt.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "skull",
+			"path": "./assets/images/clothes/skull.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "spaghetti",
+			"path": "./assets/images/clothes/spaghetti.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "spooky",
+			"path": "./assets/images/clothes/spooky.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "sporty",
+			"path": "./assets/images/clothes/sporty.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "stripe",
+			"path": "./assets/images/clothes/stripe.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "suit",
+			"path": "./assets/images/clothes/suit.png",
+			"width": 2560,
+			"height": 1568
+		},
+		{
+			"name": "witch",
+			"path": "./assets/images/clothes/witch.png",
+			"width": 256,
+			"height": 1568
+		},
+		{
+			"name": "ui",
+			"path": "./assets/sprites/ui/UI.png",
+			"width": 384,
+			"height": 144
+		},
+		{
+			"name": "seeds",
+			"path": "./assets/sprites/farming/seeds.png",
+			"width": 112,
+			"height": 96
+		},
+		{
+			"name": "crops",
+			"path": "./assets/sprites/farming/crops.png",
+			"width": 96,
+			"height": 592
+		},
+		{
+			"name": "item_carry",
+			"path": "./assets/sprites/farming/item_carry.png",
+			"width": 160,
+			"height": 192
+		},
+		{
+			"name": "bob",
+			"path": "./assets/images/hair/bob.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "braids",
+			"path": "./assets/images/hair/braids.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "buzzcut",
+			"path": "./assets/images/hair/buzzcut.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "curly",
+			"path": "./assets/images/hair/curly.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "emo",
+			"path": "./assets/images/hair/emo.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "extraLongSkirt",
+			"path": "./assets/images/hair/extra_long_skirt.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "extraLong",
+			"path": "./assets/images/hair/extra_long.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "frenchCurl",
+			"path": "./assets/images/hair/french_curl.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "gentleman",
+			"path": "./assets/images/hair/gentleman.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "longStraight",
+			"path": "./assets/images/hair/long_straight.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "longStraightSkirt",
+			"path": "./assets/images/hair/long_straight_skirt.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "midiwave",
+			"path": "./assets/images/hair/midiwave.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "ponytail",
+			"path": "./assets/images/hair/ponytail.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "spacebuns",
+			"path": "./assets/images/hair/spacebuns.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "buildings",
+			"path": "./assets/sprites/Buildings/buildings.png",
+			"width": 1503,
+			"height": 1072
+		},
+		{
+			"name": "wavy",
+			"path": "./assets/images/hair/wavy.png",
+			"width": 3584,
+			"height": 1568
+		},
+		{
+			"name": "uiAll",
+			"path": "./assets/sprites/ui/UI_all.png",
+			"width": 840,
+			"height": 480
+		},
+		{
+			"name": "viksshop",
+			"path": "./assets/sprites/ui/viksshop.png",
+			"width": 224,
+			"height": 128
+		},
+		{
+			"name": "titlescreenui",
+			"path": "./assets/sprites/ui/TitleScreenUI.png",
+			"width": 360,
+			"height": 360
+		},
+		{
+			"name": "pauseui",
+			"path": "./assets/sprites/ui/pause.png",
+			"width": 360,
+			"height": 360
+		},
+		{
+			"name": "winstateui",
+			"path": "./assets/sprites/ui/winstateui.png",
+			"width": 360,
+			"height": 360
+		},
+		{
+			"name": "blissard",
+			"path": "./assets/images/blissard.png",
+			"width": 360,
+			"height": 360
+		},
+		{
+			"name": "interactable",
+			"path": "./assets/sprites/farming/interactable.png",
+			"width": 16,
+			"height": 16
+		},
+		{
+			"name": "barninventory",
+			"path": "./assets/sprites/ui/barn.png",
+			"width": 224,
+			"height": 128
+		}
+	],
+	"fonts": [
+		{
+			"name": "joystix",
+			"path": "./assets/fonts/Joystix.ttf",
+			"size": 10,
+			"volume": 0.1,
+			"loop": true
+		},
+		{
+			"name": "open-sans",
+			"path": "./assets/fonts/OpenSans-Regular.ttf",
+			"size": 10,
+			"volume": 0.1,
+			"loop": true
+		}
+	],
+	"sounds": [
+		{
+			"name": "empty-mind",
+			"path": "./assets/sounds/music/Farm-Soundtrack/empty-mind.wav",
+			"size": 1,
+			"volume": 0.1,
+			"loop": true
+		},
+		{
+			"name": "once-in-paris",
+			"path": "./assets/sounds/music/Town-Soundtrack/once-in-paris.wav",
+			"size": 1,
+			"volume": 0.1,
+			"loop": true
+		},
+		{
+			"name": "lofi-to-study-and-relax-to",
+			"path": "./assets/sounds/music/Interior-Songs/lofi-to-study-and-relax-to.wav",
+			"size": 1,
+			"volume": 0.2,
+			"loop": true
+		},
+
+
+		{
+			"name": "selection-choice",
+			"path": "./assets/sounds/effects/selection-choice.ogg",
+			"size": 5,
+			"volume": 0.15
+		},
+		{
+			"name": "selection-move",
+			"path": "./assets/sounds/effects/selection-move.ogg",
+			"size": 5,
+			"volume": 0.15
+		},
+		{
+			"name": "hoe-effect",
+			"path": "./assets/sounds/effects/hoe.wav",
+			"size": 1,
+			"volume": 1
+		},
+		{
+			"name": "coin-effect",
+			"path": "./assets/sounds/effects/Coin-Reward.wav",
+			"size": 1,
+			"volume": 0.5
+		}
+	]
+}
