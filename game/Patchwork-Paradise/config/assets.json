@@ -326,7 +326,7 @@
 		},
 		{
 			"name": "interactable",
-			"path": "./assets/sprites/farming/interactable.png",
+			"path": "./assets/sprites/farming/Interactable.png",
 			"width": 16,
 			"height": 16
 		},
