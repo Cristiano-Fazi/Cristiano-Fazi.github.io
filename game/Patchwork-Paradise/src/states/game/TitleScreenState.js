@@ -62,6 +62,7 @@ export default class TitleScreenState extends State {
 				localStorage.setItem("inventory", null);
 				localStorage.setItem("money", null);
 				localStorage.setItem("farmlevel", null);
+				localStorage.setItem("barninventory", null);
 			}
 			this.initializeGame()
 		}

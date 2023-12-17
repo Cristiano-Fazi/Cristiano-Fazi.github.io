@@ -21,10 +21,10 @@ export default class PlayerHoeingState extends State {
 
 		this.player = player;
 		this.animation = {
-			[Direction.Up]: new Animation([336, 337, 338, 339, 340], 0.1, 1),
-			[Direction.Down]: new Animation([328, 329, 330, 331, 332], 0.1, 1),
-			[Direction.Left]: new Animation([352, 353, 354, 355, 356], 0.1, 1),
-			[Direction.Right]: new Animation([344, 345, 346, 347, 348], 0.1, 1),
+			[Direction.Up]: new Animation([336, 337, 338, 339, 340], 0.2, 1),
+			[Direction.Down]: new Animation([328, 329, 330, 331, 332], 0.2, 1),
+			[Direction.Left]: new Animation([352, 353, 354, 355, 356], 0.2, 1),
+			[Direction.Right]: new Animation([344, 345, 346, 347, 348], 0.2, 1),
 		};
 	}
 

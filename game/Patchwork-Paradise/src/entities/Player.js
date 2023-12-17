@@ -16,6 +16,13 @@ import PlayerHarvestingState from "../states/player/PlayerHarvestingState.js";
 import TitleScreenState from "../states/game/TitleScreenState.js";
 import WheatSeed from "../objects/seeds/WheatSeed.js";
 import ItemFactory from "../services/Factories/ItemFactory.js";
+import CornSeed from "../objects/seeds/CornSeed.js";
+import Watermelon from "../objects/items/Watermelon.js";
+import WatermelonSeed from "../objects/seeds/WatermelonSeed.js";
+import StrawberrySeed from "../objects/seeds/StrawberrySeed.js";
+import TomatoSeed from "../objects/seeds/TomatoSeed.js";
+import PumpkinSeed from "../objects/seeds/PumpkinSeed.js";
+import RaddishSeed from "../objects/seeds/RaddishSeed.js";
 
 export default class Player extends GameEntity {
 	/**
@@ -57,7 +64,7 @@ export default class Player extends GameEntity {
 
 		//Inventory stuff
 		this.money = money;
-		this.inventory = this.loadInventory() ?? [{item: new WheatSeed(), quantity: 10}, null, null, null, null, null, null, null, null];
+		this.inventory = this.loadInventory() ?? [{item: new WheatSeed(), quantity: 1}, {item: new CornSeed(), quantity: 1}, {item: new WatermelonSeed(), quantity: 1}, {item: new StrawberrySeed(), quantity: 1}, {item: new TomatoSeed(), quantity: 1}, {item: new PumpkinSeed(), quantity: 1}, {item: new RaddishSeed(), quantity: 1}, null, null];
 		this.selectedInventoryItem = 0;
 		this.barnInventory = this.loadBarnInventory() ?? [];
 
@@ -85,7 +92,7 @@ export default class Player extends GameEntity {
 	loadBarnInventory() {
 		let items = JSON.parse(localStorage.getItem("barninventory"))
 		if(!items) {
-			return
+			return null;
 		}
 		items = items.map(savedItem => {
 			if(savedItem) {

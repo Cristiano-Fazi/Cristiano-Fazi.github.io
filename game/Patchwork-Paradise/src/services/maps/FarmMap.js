@@ -1,6 +1,6 @@
 import Map from "./Map.js"
 import Vector from "../../../lib/Vector.js"
-import { CANVAS_WIDTH, CANVAS_HEIGHT } from "../../globals.js"
+import { CANVAS_WIDTH, CANVAS_HEIGHT, MUSIC_MUTE } from "../../globals.js"
 import Tile from "../Tile.js"
 import Camera from "../../../lib/Camera.js"
 import ImageName from "../../enums/ImageName.js";

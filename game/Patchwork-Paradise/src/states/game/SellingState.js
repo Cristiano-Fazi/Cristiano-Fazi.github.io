@@ -25,10 +25,12 @@ export default class SellingState extends State {
 		if(keys.d) {
 			keys.d = false;
             this.SellingUI.selectedItemIndex = Math.min(SellingUI.ROW_SIZE - 1, this.SellingUI.selectedItemIndex + 1);
+			sounds.play(SoundName.SelectionMove);
 		}
 		if(keys.a) {
 			keys.a = false;
             this.SellingUI.selectedItemIndex = Math.max(0, this.SellingUI.selectedItemIndex - 1);
+			sounds.play(SoundName.SelectionMove);
 		}
 		if(keys.Enter) {
 			keys.Enter = false;

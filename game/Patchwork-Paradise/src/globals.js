@@ -22,6 +22,8 @@ export const objectStore = new ObjectStore()
 
 export const DEBUG = false;
 
+export const MUSIC_MUTE = true;
+
 let town = await fetch('./config/map.json').then((response) => response.json());
 let smallFarm = await fetch('./config/smallfarm.json').then((response) => response.json());
 let mediumFarm = await fetch('./config/mediumfarm.json').then((response) => response.json());
