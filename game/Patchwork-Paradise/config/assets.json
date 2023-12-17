@@ -358,21 +358,21 @@
 			"name": "empty-mind",
 			"path": "./assets/sounds/music/Farm-Soundtrack/empty-mind.wav",
 			"size": 1,
-			"volume": 0,
+			"volume": 0.1,
 			"loop": true
 		},
 		{
 			"name": "once-in-paris",
 			"path": "./assets/sounds/music/Town-Soundtrack/once-in-paris.wav",
 			"size": 1,
-			"volume": 0,
+			"volume": 0.1,
 			"loop": true
 		},
 		{
 			"name": "lofi-to-study-and-relax-to",
 			"path": "./assets/sounds/music/Interior-Songs/lofi-to-study-and-relax-to.wav",
 			"size": 1,
-			"volume": 0,
+			"volume": 0.1,
 			"loop": true
 		},
 
