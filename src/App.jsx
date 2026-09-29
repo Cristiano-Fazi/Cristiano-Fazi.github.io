@@ -1,9 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css'
 import yanoImg from '../images/Yano_on_terasse.jpg'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    // Force the browser to start at the top on reload
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    const elements = document.querySelectorAll('.scroll-animate');
+    elements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   const scrollToSection = (e, sectionId) => {
     e.preventDefault();
@@ -57,6 +78,7 @@ function App() {
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a>
           <a href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</a>
+          <a href="#education" onClick={(e) => scrollToSection(e, 'education')}>Education</a>
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
         </div>
       </nav>
@@ -78,11 +100,11 @@ function App() {
         </section>
 
         <section id="experience" className="experience-section">
-          <h2>Work Experience</h2>
+          <h2 className="scroll-animate">Work Experience</h2>
 
           <div className="timeline">
             {/* Matrox */}
-            <div className="timeline-item">
+            <div className="timeline-item scroll-animate">
               <div className="timeline-dot"></div>
               <div className="timeline-item-body">
                 <div className="timeline-content">
@@ -107,7 +129,7 @@ function App() {
             </div>
 
             {/* CAE */}
-            <div className="timeline-item">
+            <div className="timeline-item scroll-animate">
               <div className="timeline-dot"></div>
               <div className="timeline-item-body">
                 <div className="timeline-content">
@@ -129,6 +151,52 @@ function App() {
                 </div>
                 <div className="timeline-logo">
                   <img src="images/company-icons/CAE_logo.webp" alt="CAE Logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" className="experience-section">
+          <h2 className="scroll-animate">Education</h2>
+
+          <div className="timeline">
+            {/* Concordia */}
+            <div className="timeline-item scroll-animate">
+              <div className="timeline-dot"></div>
+              <div className="timeline-item-body">
+                <div className="timeline-content">
+                  <span className="timeline-date">August 2024 – May 2028 (Expected)</span>
+                  <h3>Bachelor of Engineering – Software Engineering</h3>
+                  <h4>Concordia University, Montreal, QC</h4>
+                  <ul>
+                    <li>Participated multiple times in school run hackathon ConUHacks</li>
+                    <li>Relevant courses: Data Structures and Algorithms, Operating Systems, System Hardware</li>
+                    <li>GPA: 3.74</li>
+                  </ul>
+                </div>
+                <div className="timeline-logo">
+                  <img src="images/company-icons/concordia-university-logo.png" alt="Concordia Logo" />
+                </div>
+              </div>
+            </div>
+
+            {/* John Abbott */}
+            <div className="timeline-item scroll-animate">
+              <div className="timeline-dot"></div>
+              <div className="timeline-item-body">
+                <div className="timeline-content">
+                  <span className="timeline-date">August 2021 – May 2024</span>
+                  <h3>DEC – Computer Science</h3>
+                  <h4>John Abbott College, Sainte-Anne-de-Bellevue, QC</h4>
+                  <ul>
+                    <li>Achieved top project scores, exceeding 100%, in multiple courses</li>
+                    <li>Dean’s List Recipient for Academic Achievement</li>
+                    <li>Received the CAE Tech program scholarship</li>
+                  </ul>
+                </div>
+                <div className="timeline-logo">
+                  <img src="images/company-icons/John-Abbott-logo.jpg" alt="John Abbott Logo" />
                 </div>
               </div>
             </div>
