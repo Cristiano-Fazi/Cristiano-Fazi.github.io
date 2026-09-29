@@ -1,20 +1,34 @@
+import { useState } from 'react';
 import './App.css'
 import yanoImg from '../images/Yano_on_terasse.jpg'
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const scrollToExperience = (e) => {
     e.preventDefault();
     document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <div className="container">
       <nav className="navbar">
         <div className="logo">Cristiano Fazi</div>
-        <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
+        
+        <div className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </div>
       </nav>
 

@@ -10,6 +10,12 @@
   align-items: center;
   padding: 20px 0 30px 0;
   animation: fadeSlideDown 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  position: relative;
+  z-index: 1000;
+}
+
+.hamburger {
+  display: none;
 }
 
 .logo {
@@ -160,27 +166,107 @@
 
 @media (max-width: 800px) {
   .navbar {
+    padding: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--text);
+    transition: 0.3s;
+    border-radius: 3px;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: calc(100% - 20px);
+    margin-top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    z-index: 99;
+    
+    /* Dropdown hide state */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px) scale(0.98);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    padding: 32px 0;
+  }
+  
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  
+  .nav-links a::after {
+    display: none;
   }
 
   .hero-section {
     flex-direction: column;
     text-align: center;
-    padding: 40px 0;
+    padding: 10px 0 40px 0;
     gap: 40px;
+    transform: none;
+  }
+
+  .hero-image-container {
+    padding-right: 0;
+    justify-content: center;
   }
 
   .hero-content {
+    padding-left: 0;
     align-items: center;
   }
 
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 40px;
+    text-align: center;
   }
 
   .hero-content p {
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
   }
 }
 
