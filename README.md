@@ -1,28 +1,16 @@
-# Cristiano-Fazi.github.io
+# React + Vite
 
-# My Portfolio Website
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Welcome to my personal [portfolio website](https://www.your-portfolio-website.com)! This website  seeks to showcases my skills, projects, and experiences in the computer science field, in a visually appealing manner. If there is something you'd like to recommen I impliment feel free to inform me using my information in the contact page!
+Currently, two official plugins are available:
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-  
-## Introduction
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-This portfolio website is designed to present my professional profile, including my skills, projects, and work experience. The clean and responsive design ensures a seamless user experience across various devices.
+## React Compiler
 
-## Features
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- Responsive design for desktop and mobile devices
-- Sections for showcasing my personal objective, projects, and work experience
-- Contact page for easy communication
+## Expanding the Oxlint configuration
 
-## Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-
-[Check out my portfolio website]([https://www.your-portfolio-website.com](https://cristiano-fazi.github.io/)) 👀
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
