@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import './App.css'
 import yanoImg from '../images/Yano_on_terasse.jpg'
+import matroxImg from '../images/company-icons/matrox_logo.webp'
+import caeImg from '../images/company-icons/CAE_logo.webp'
+import concordiaImg from '../images/company-icons/concordia-university-logo.png'
+import johnAbbottImg from '../images/company-icons/John-Abbott-logo.jpg'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -123,7 +127,7 @@ function App() {
                   </div>
                 </div>
                 <div className="timeline-logo">
-                  <img src="images/company-icons/matrox_logo.webp" alt="Matrox Logo" />
+                  <img src={matroxImg} alt="Matrox Logo" />
                 </div>
               </div>
             </div>
@@ -150,7 +154,7 @@ function App() {
                   </div>
                 </div>
                 <div className="timeline-logo">
-                  <img src="images/company-icons/CAE_logo.webp" alt="CAE Logo" />
+                  <img src={caeImg} alt="CAE Logo" />
                 </div>
               </div>
             </div>
@@ -176,7 +180,7 @@ function App() {
                   </ul>
                 </div>
                 <div className="timeline-logo">
-                  <img src="images/company-icons/concordia-university-logo.png" alt="Concordia Logo" />
+                  <img src={concordiaImg} alt="Concordia Logo" />
                 </div>
               </div>
             </div>
@@ -196,7 +200,7 @@ function App() {
                   </ul>
                 </div>
                 <div className="timeline-logo">
-                  <img src="images/company-icons/John-Abbott-logo.jpg" alt="John Abbott Logo" />
+                  <img src={johnAbbottImg} alt="John Abbott Logo" />
                 </div>
               </div>
             </div>
