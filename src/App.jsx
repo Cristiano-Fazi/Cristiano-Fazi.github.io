@@ -67,7 +67,7 @@ function App() {
             <img src={yanoImg} alt="Cristiano Fazi" className="hero-image" />
           </div>
           <div className="hero-content">
-            <h1>Junior Software Engineer</h1>
+            <h1>Junior <br /> Software Engineer</h1>
             <p>
               I’m a software engineering student at Concordia and I’m looking to contribute to big projects
             </p>

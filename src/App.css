@@ -254,6 +254,10 @@
     padding-right: 0;
     justify-content: center;
   }
+  
+  .hero-image {
+    max-width: 280px;
+  }
 
   .hero-content {
     padding-left: 0;
