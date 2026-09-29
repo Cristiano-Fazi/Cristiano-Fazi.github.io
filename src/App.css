@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 0 30px 0;
+  animation: fadeSlideDown 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
 
 .logo {
@@ -77,6 +78,10 @@
   border-radius: 32px;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
   display: block;
+  animation: fadeSlideUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 
 .hero-content {
@@ -92,6 +97,10 @@
   font-weight: 700;
   margin: 0 0 20px 0;
   line-height: 1.1;
+  animation: fadeSlideUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 
 .hero-content p {
@@ -99,6 +108,10 @@
   color: var(--text-secondary);
   margin: 0 0 40px 0;
   line-height: 1.5;
+  animation: fadeSlideUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 
 .see-work-btn {
@@ -111,6 +124,10 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: fadeSlideUp 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+  animation-fill-mode: both;
 }
 
 .see-work-btn:hover {
@@ -164,5 +181,28 @@
 
   .hero-content p {
     font-size: 18px;
+  }
+}
+
+/* Load Animations */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
