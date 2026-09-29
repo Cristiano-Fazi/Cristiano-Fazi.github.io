@@ -78,7 +78,7 @@ function App() {
         </section>
 
         <section id="experience" className="experience-section">
-          <h2>Experience</h2>
+          <h2>Work Experience</h2>
 
           <div className="timeline">
             {/* Matrox */}

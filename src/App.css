@@ -151,7 +151,7 @@
 }
 
 .experience-section {
-  padding: 40px 0 100px 0;
+  padding: 0 0 100px 0;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -395,6 +395,10 @@
   .timeline-logo {
     width: 100%;
     height: 200px;
+  }
+
+  .timeline {
+    margin-left: 0;
   }
 }
 
