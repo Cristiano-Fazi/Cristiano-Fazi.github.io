@@ -1,4 +1,5 @@
 import './App.css'
+import yanoImg from '../images/Yano_on_terasse.jpg'
 
 function App() {
   const scrollToExperience = (e) => {
@@ -20,9 +21,7 @@ function App() {
       <main>
         <section id="about" className="hero-section">
           <div className="hero-image-container">
-            <div className="image-placeholder">
-              <span>Image Placeholder</span>
-            </div>
+            <img src={yanoImg} alt="Cristiano Fazi" className="hero-image" />
           </div>
           <div className="hero-content">
             <h1>Junior Software Engineer</h1>
