@@ -79,7 +79,60 @@ function App() {
 
         <section id="experience" className="experience-section">
           <h2>Experience</h2>
-          <p>Overview of my Professional Roles</p>
+
+          <div className="timeline">
+            {/* Matrox */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-item-body">
+                <div className="timeline-content">
+                  <span className="timeline-date">May 2026 – Present</span>
+                  <h3>Software Quality Assurance Intern</h3>
+                  <h4>Matrox, Montreal, Quebec</h4>
+                  <ul>
+                    <li>Rigorously tested software, uncovering and creating tickets for many bugs</li>
+                    <li>Developed and maintained internal tools for quality assurance team</li>
+                    <li>Created software for automated testing of APIs</li>
+                  </ul>
+                  <div className="tech-tags">
+                    <span>Python</span>
+                    <span>Testing</span>
+                    <span>Jira</span>
+                  </div>
+                </div>
+                <div className="timeline-logo">
+                  <img src="images/company-icons/matrox_logo.webp" alt="Matrox Logo" />
+                </div>
+              </div>
+            </div>
+
+            {/* CAE */}
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-item-body">
+                <div className="timeline-content">
+                  <span className="timeline-date">June 2023 – August 2024</span>
+                  <h3>Software Developer Intern</h3>
+                  <h4>CAE, Montreal, Quebec</h4>
+                  <ul>
+                    <li>Maintained internal tools using Angular, Python and Cosmos DB</li>
+                    <li>Worked on software to constantly monitor the status of all civil aviation simulators</li>
+                    <li>Helped migrate data services from SQL to Cosmos DB (NoSQL)</li>
+                    <li>Worked on deployment pipelines to automate builds and releases</li>
+                  </ul>
+                  <div className="tech-tags">
+                    <span>Python</span>
+                    <span>Angular</span>
+                    <span>C#</span>
+                    <span>YAML</span>
+                  </div>
+                </div>
+                <div className="timeline-logo">
+                  <img src="images/company-icons/CAE_logo.webp" alt="CAE Logo" />
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
