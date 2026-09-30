@@ -5,6 +5,9 @@ import matroxImg from '../images/company-icons/matrox_logo.webp'
 import caeImg from '../images/company-icons/CAE_logo.webp'
 import concordiaImg from '../images/company-icons/concordia-university-logo.png'
 import johnAbbottImg from '../images/company-icons/John-Abbott-logo.jpg'
+import emailIcon from '../images/email-icon.png'
+import linkedinIcon from '../images/linkedin-icon.png'
+import githubIcon from '../images/Github-logo.png'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -204,6 +207,26 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="contact" className="contact-section scroll-animate">
+          <h2>Let's Connect</h2>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          
+          <div className="contact-links">
+            <a href="mailto:cristianofazi03@gmail.com" className="contact-card">
+              <img src={emailIcon} alt="Email" />
+              <span>Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/cristiano-fazi-b21584208" target="_blank" rel="noreferrer" className="contact-card">
+              <img src={linkedinIcon} alt="LinkedIn" />
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Cristiano-Fazi" target="_blank" rel="noreferrer" className="contact-card">
+              <img src={githubIcon} alt="GitHub" />
+              <span>GitHub</span>
+            </a>
           </div>
         </section>
       </main>
