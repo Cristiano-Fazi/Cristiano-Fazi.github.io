@@ -307,29 +307,34 @@
 .contact-card {
   display: flex;
   align-items: center;
-  gap: 15px;
-  background-color: var(--bg);
-  border: 1px solid rgba(0,0,0,0.1);
-  padding: 16px 32px;
-  border-radius: 50px;
-  font-size: 20px;
+  gap: 12px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--text);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  transition: all 0.3s ease;
 }
 
 .contact-card img {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-  border-color: rgba(0,0,0,0.2);
+  transform: scale(1.05);
+  color: #000;
+}
+
+.contact-card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
