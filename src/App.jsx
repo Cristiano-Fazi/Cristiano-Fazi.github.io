@@ -97,12 +97,21 @@ function App() {
       <main>
         <section id="about" className="hero-section">
           <div className="hero-image-container">
-            <img src={yanoImg} alt="Cristiano Fazi" className="hero-image" />
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img src={yanoImg} alt="Cristiano Fazi" className="hero-image" />
+                </div>
+                <div className="flip-card-back">
+                  <p>Hi, I'm Cristiano! I love coding, designing, and bringing creative ideas to life. This is the back of my card!</p>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="hero-content">
             <h1>Junior <br /> Software Engineer</h1>
             <p>
-              I’m a software engineering student at Concordia and I’m looking to contribute to big projects
+              I’m a Software Engineering student at Concordia and I’m looking to contribute to big projects.
             </p>
             <div className="btn-wrapper">
               <button className="see-work-btn" onClick={(e) => scrollToSection(e, 'experience')}>See my work</button>
