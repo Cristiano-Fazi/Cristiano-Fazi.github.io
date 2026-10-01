@@ -5,7 +5,10 @@ import matroxImg from '../images/company-icons/matrox_logo.webp'
 import caeImg from '../images/company-icons/CAE_logo.webp'
 import concordiaImg from '../images/company-icons/concordia-university-logo.png'
 import johnAbbottImg from '../images/company-icons/John-Abbott-logo.jpg'
-import emailIcon from '../images/email-icon.png'
+import cropCareImg from '../images/cropcare.png'
+import TradeMindImg from '../images/favicon.ico'
+import AILaunchLab from '../images/company-icons/ai-launch-lab.webp'
+
 import linkedinIcon from '../images/linkedin-icon.png'
 import githubIcon from '../images/Github-logo.png'
 
@@ -86,6 +89,7 @@ function App() {
           <a href="#about" onClick={(e) => scrollToSection(e, 'about')}>About</a>
           <a href="#experience" onClick={(e) => scrollToSection(e, 'experience')}>Experience</a>
           <a href="#education" onClick={(e) => scrollToSection(e, 'education')}>Education</a>
+          <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')}>Projects</a>
           <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contact</a>
         </div>
       </nav>
@@ -210,13 +214,72 @@ function App() {
           </div>
         </section>
 
+        <section id="projects" className="experience-section">
+          <h2 className="scroll-animate">Projects</h2>
+
+          <div className="timeline">
+            {/* CropCare */}
+            <div className="timeline-item scroll-animate">
+              <div className="timeline-dot"></div>
+              <div className="timeline-item-body">
+                <div className="timeline-content">
+                  <span className="timeline-date">April 2024 - May 2024</span>
+                  <h3>CropCare</h3>
+                  <h4>Multidisciplinary Final Project for Cegep</h4>
+                  <ul>
+                    <li>Worked on cross platform mobile app to remotely access and control both servos and sensors</li>
+                    <li>Used azure to store data in the cloud</li>
+                    <li>Built multiple scale models as proof od concepts</li>
+                  </ul>
+                  <div className="tech-tags">
+                    <span>.NET MAUI</span>
+                    <span>Python</span>
+                    <span>Azure IoT Hub</span>
+                  </div>
+                </div>
+                <div className="timeline-logo">
+                  <img src={cropCareImg} alt="CropCare Logo" />
+                </div>
+              </div>
+            </div>
+
+            {/* TradeMind */}
+            <div className="timeline-item scroll-animate">
+              <div className="timeline-dot"></div>
+              <div className="timeline-item-body">
+                <div className="timeline-content">
+                  <span className="timeline-date">January 2024 - May 2024</span>
+                  <h3>TradeMind</h3>
+                  <h4>AI Stock Market Prediction Model</h4>
+                  <ul>
+                    <li> Final project for 10 Week AI Launch Lab course</li>
+                    <li> Used a linear regression model to predict stock price based on historic data</li>
+                    <li> Developed web application with React to display results graphically</li>
+                  </ul>
+                  <div className="tech-tags">
+                    <span>React</span>
+                    <span>AI</span>
+                  </div>
+                </div>
+                <div className="timeline-logo">
+                  {/* You can replace this inline style with an actual project image later */}
+                  <img src={AILaunchLab} alt="AI Launch Lab Logo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="contact" className="contact-section scroll-animate">
           <h2>Let's Connect</h2>
           <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-          
+
           <div className="contact-links">
             <a href="mailto:cristianofazi03@gmail.com" className="contact-card">
-              <img src={emailIcon} alt="Email" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="contact-icon">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
               <span>Email</span>
             </a>
             <a href="https://www.linkedin.com/in/cristiano-fazi-b21584208" target="_blank" rel="noreferrer" className="contact-card">

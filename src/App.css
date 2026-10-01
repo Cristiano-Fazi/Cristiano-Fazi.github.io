@@ -318,12 +318,11 @@
   transition: all 0.3s ease;
 }
 
-.contact-card img {
+.contact-card img,
+.contact-card svg {
   width: 32px;
   height: 32px;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.7;
   transition: all 0.3s ease;
 }
 
@@ -332,9 +331,9 @@
   color: #000;
 }
 
-.contact-card:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
+.contact-card:hover img,
+.contact-card:hover svg {
+  transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
