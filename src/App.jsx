@@ -6,14 +6,16 @@ import caeImg from '../images/company-icons/CAE_logo.webp'
 import concordiaImg from '../images/company-icons/concordia-university-logo.png'
 import johnAbbottImg from '../images/company-icons/John-Abbott-logo.jpg'
 import cropCareImg from '../images/cropcare.png'
-import TradeMindImg from '../images/favicon.ico'
 import AILaunchLab from '../images/company-icons/ai-launch-lab.webp'
+import AlyssaYanoHikeBackTurned from '../images/Alyssa_Yano_Back_Turned_Hiking.jpg'
+import backpic from '../images/yano_back_turned.jpg'
 
 import linkedinIcon from '../images/linkedin-icon.png'
 import githubIcon from '../images/Github-logo.png'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
     // Force the browser to start at the top on reload
@@ -97,13 +99,28 @@ function App() {
       <main>
         <section id="about" className="hero-section">
           <div className="hero-image-container">
-            <div className="flip-card">
+            <div className={`flip-card ${isFlipped ? 'flipped' : ''}`} onClick={() => setIsFlipped(!isFlipped)}>
               <div className="flip-card-inner">
                 <div className="flip-card-front">
                   <img src={yanoImg} alt="Cristiano Fazi" className="hero-image" />
                 </div>
                 <div className="flip-card-back">
-                  <p>Hi, I'm Cristiano! I love coding, designing, and bringing creative ideas to life. This is the back of my card!</p>
+                  <div className="hobby-section">
+                    <div className="taped-img tilted-left">
+                      <img src={backpic} alt="Hiking" />
+                      <span className="polaroid-text">Quebec City, 2026</span>
+                      <div className="tape"></div>
+                    </div>
+                    <p className="text-left">Hi, I'm Cristiano! I love going on hikes and exploring new cities and places!</p>
+                  </div>
+                  <div className="hobby-section">
+                    <p className="text-right">When I'm not coding, you can usually find me outdoors enjoying nature.</p>
+                    <div className="taped-img tilted-right">
+                      <img src={AlyssaYanoHikeBackTurned} alt="Outdoors" />
+                      <span className="polaroid-text">Grand Gardens National Park, 2026</span>
+                      <div className="tape"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
